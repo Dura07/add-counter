@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <h1>Numbers increases by 2 per click:</h1>
+        <h2 id="count-elmt">0</h2>
+        <button class="btn" onclick="myIncrease_2()">Increase-By-2</button>
+
+
+    <script>
+        let count = 0
+        let countEl = document.getElementById("count-elmt")
+        console.log(countEl)
+
+        function myIncrease_2() {
+            count = count + 2
+            countEl.innerText = count
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
